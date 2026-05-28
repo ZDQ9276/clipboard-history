@@ -36,30 +36,35 @@ Windows 剪贴板历史管理工具，后台静默记录所有复制过的文字
 - **全局热键**：keyboard
 - **剪贴板访问**：pyperclip + ctypes + PIL.ImageGrab
 
-## 安装与运行
+## 安装与运行（小白友好版）
 
-### 环境要求
+### 第一步：下载代码
 
-- Windows 10/11
-- Python 3.10+
+点击页面右上角绿色 **Code** 按钮 → **Download ZIP**，解压到任意文件夹。
 
-### 安装依赖
+### 第二步：安装 Python
+
+如果还没装 Python，去 [python.org](https://www.python.org/downloads/) 下载安装。
+
+> **安装时务必勾选** `Add Python to PATH`（添加到系统环境变量）
+
+### 第三步：安装依赖
+
+打开 **命令提示符**（Win+R 输入 `cmd` 回车），粘贴以下命令：
 
 ```bash
 pip install pillow pyperclip pystray keyboard
 ```
 
-### 启动应用
+### 第四步：启动
 
-```bash
-pythonw app.py
-```
+在解压的文件夹中双击 `启动历史粘接.lnk`，应用即以后台托盘模式运行。
 
-> 使用 `pythonw` 启动可隐藏控制台窗口，应用在系统托盘静默运行。
+> 按 `Ctrl+Shift+V` 呼出窗口，开始使用。
 
 ### 创建桌面快捷方式（可选）
 
-项目根目录下已包含 `启动历史粘接.lnk` 和 `create_shortcut.ps1`，可自行修改路径后运行 PowerShell 脚本生成桌面快捷方式。
+右键 `create_shortcut.ps1` → **使用 PowerShell 运行**，桌面即生成快捷方式。
 
 ## 项目结构
 
