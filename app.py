@@ -41,7 +41,12 @@ DB_PATH = str(APP_DIR / 'clipboard.db')
 IMAGES_DIR = APP_DIR / 'images'
 IMAGES_DIR.mkdir(exist_ok=True)
 LOG_PATH = APP_DIR / 'app.log'
-ICON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icon.png')
+# Support both normal run and PyInstaller frozen bundle
+if getattr(sys, 'frozen', False):
+    BASE_DIR = Path(sys._MEIPASS)
+else:
+    BASE_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
+ICON_PATH = str(BASE_DIR / 'icon.png')
 
 def log(msg):
     try:

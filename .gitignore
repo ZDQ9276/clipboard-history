@@ -27,6 +27,7 @@ Desktop.ini
 *.signal
 app.log
 
-# Avoid committing large image cache
-*.png~
-*.jpg~
+# PyInstaller build artifacts
+build/
+dist/
+*.spec

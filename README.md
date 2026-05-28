@@ -2,6 +2,13 @@
 
 Windows 剪贴板历史管理工具，后台静默记录所有复制过的文字和图片，支持搜索、置顶、一键复用。
 
+## 快速下载
+
+> [**点击下载 ClipboardHistory.exe**](https://github.com/ZDQ9276/clipboard-history/releases/download/v1.0.0/ClipboardHistory.exe)  
+> 双击即用，无需安装 Python 或任何依赖。（21MB）
+
+*如果 Windows Defender 弹窗提示，点击「更多信息」→「仍要运行」即可。*
+
 ## 功能特性
 
 - **自动记录** — 后台静默监控剪贴板，文字和图片复制自动入库
